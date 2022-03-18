@@ -29,7 +29,11 @@ body {
   font-weight: 900;
 }
 .intro .small-image img {
-  height: 400px;
+  height: 500px;
+}
+
+.intro #img-landing {
+  height: 100%;
 }
 .intro p {
   font-size: 21px;
@@ -58,7 +62,7 @@ body {
   color: white;
   padding: 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("https://cdn.pixabay.com/photo/2015/04/03/13/29/pizza-705061_960_720.jpg");
+    url("images/pizzaBKCool.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,3 +77,6 @@ body {
 .about p {
   font-size: 15px;
 }
+
+
+
