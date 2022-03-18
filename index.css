@@ -23,6 +23,12 @@ body {
 }
 
 /* Intro */
+
+.intro {
+height: 50%;
+}
+
+
 .intro h1 {
   font-size: 4em;
   line-height: 1.1em;
@@ -32,9 +38,9 @@ body {
   height: 500px;
 }
 
-.intro #img-landing {
-  height: 100%;
-}
+/* .intro #img-landing {
+  height: ;
+} */
 .intro p {
   font-size: 21px;
 }
@@ -77,6 +83,8 @@ body {
 .about p {
   font-size: 15px;
 }
+
+ 
 
 
 
