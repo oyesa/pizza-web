@@ -120,7 +120,7 @@ height: 50%;
 }
 
 .choice h2{
-  color:orange;
+  color: #fd9d3e;
   text-align: left;
 }
 #your-orders{
@@ -136,6 +136,32 @@ height: 50%;
   background-color: #323232;
   color: white;
 }
+
+#loca {
+  padding-right: 10%;
+}
+
+#loca h5 {
+  color: #fd9d3e;
+}
+
+#cus-care {
+  padding-right: 10%;
+}
+
+#cus-care h5 {
+  color: #fd9d3e;
+}
+
+.mapouter {
+  padding-right: 10%;
+}
+
+.mapouter h5 {
+  text-align: center;
+  color: #fd9d3e;
+}
+
 #contactdetails h2{
   text-align: left;
 }
@@ -171,6 +197,9 @@ height: 50%;
     flex-direction: column;
   }
 }
+
 @media only screen and (max-width: 767px){
   .section {
     padding-top: 30px;
+  }
+}
