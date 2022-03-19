@@ -103,6 +103,7 @@ height: 50%;
 .order {
   padding-top: 4%;
   padding-bottom: 4%;
+  color: black;
 }
 
 
@@ -112,3 +113,42 @@ height: 50%;
   padding-right: 2%;
 }
 
+.delivery {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: none;
+}
+
+.choice h2{
+  color:orange;
+  text-align: left;
+}
+#your-orders{
+  color: black;
+  font-size: 30px;
+}
+
+#contact h2{
+  text-align: center;
+  color: #fd9d3e;
+}
+#contact{
+  background-color: #323232;
+  color: white;
+}
+#contactdetails h2{
+  text-align: left;
+}
+.footer{
+  padding-top: 5%;
+}
+#addedprice{
+  display: none;
+}
+#finallmessage{
+  display: none;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 28px;
+}
