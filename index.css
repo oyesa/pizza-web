@@ -4,9 +4,12 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+
 body {
   color: #4b4b4b;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 
@@ -14,11 +17,14 @@ body {
   height: 50px;
 }
 
-.color-relish {
+.color-sullivans {
   color: #fd9d3e;
 }
 
-.homepage h4 {
+.color-relish {
+  color: #fd9d3e;
+}
+.homepage h5 {
   font-family: "faster one", cursive;
 }
 
@@ -84,7 +90,25 @@ height: 50%;
   font-size: 15px;
 }
 
- 
+.flex.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#order-now h2 {
+  text-align: center;
+  color: #fd9d3e;
+}
+
+.order {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
 
 
+.choice {
+  display: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
 
