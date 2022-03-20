@@ -34,7 +34,10 @@ body {
 height: 50%;
 }
 
-
+#landing-pg {
+  padding-left: 4%;
+  padding-right: 4%;
+}
 .intro h1 {
   font-size: 4em;
   line-height: 1.1em;
@@ -90,12 +93,16 @@ height: 50%;
   font-size: 15px;
 }
 
-.flex.container {
+/* order section */
+
+
+
+/* .flex.container {
   display: flex;
   justify-content: space-between;
-}
+} */
 
-#order-now h2 {
+/* #order-now h2 {
   text-align: center;
   color: #fd9d3e;
 }
@@ -125,7 +132,7 @@ height: 50%;
 }
 #your-orders{
   color: black;
-  font-size: 30px;
+  font-size: 30px; */
 }
 
 #contact h2{
@@ -168,7 +175,7 @@ height: 50%;
 .footer{
   padding-top: 5%;
 }
-#addedprice{
+/* #addedprice{
   display: none;
 }
 #finallmessage{
@@ -189,7 +196,7 @@ height: 50%;
   padding-left: 5%;
   color: black;
   font-family: sans-serif;
-}
+} */
 
 @media only screen and (max-width: 485px){
   .flex-xs-column {

@@ -30,7 +30,7 @@
     </nav>
 
     <!--landing page section-->
-    <div class="container intro">
+    <div class="container intro" id="landing-pg">
       <div class="row">
         <div class="col-md-6 col-xs-12">
           <h1>SULLIVAN'S <br> PIZZA <span class="color-relish">RELISH</span></h1>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="col-md-6 text-center" id="img-landing">
-          <img src="images/pizzaOK.png" alt="image of a mushroom pizza">
+          <img src="images/pizzaOK.png" alt="image ">
         </div>
       </div>
     </div>
@@ -89,111 +89,170 @@
 
     <!--order section-->
 
-      <div class="container-fluid order" id="make-order">
-        <div class="controls-top text-center" id="order-now">
-          <h2><strong>ORDER HERE</strong></h2>
-        </div>
-        <!-- <h6>Order your relish pizza here!</h6> -->
+    <div id="order-section" class="order my-5">
+      <div class="container">
+          <div class="row">
+              <h2>Order Here</h2>
+              <!-- <p>Relish in every slice</p> -->
+              <div class="col-md-5 shadow p-4">
+                  <p class="text-center text-danger" id="error"></p>
+                  <form id="order-form">
+                      <div class="form-group">
+                          <label for="">Select Pizza <span class="text-danger">*</span></label>
+                          <select name="pizza" id="pizza" class="form-control">
+                              <option value="" selected disabled>Select Pizza</option>
+                          </select>
+                      </div>
+                      <div class="form-group mt-2">
+                          <label for="">Size <span class="text-danger">*</span></label>
+                          <select name="size" id="size" class="form-control">
+                              <option value="" selected disabled>Select pizza size</option>
+                          </select>
+                      </div>
+                      <div class="form-group mt-2">
+                          <label for="">Crust <span class="text-danger">*</span></label>
+                          <select name="crust" id="crust" class="form-control">
+                              <option value="" selected disabled>Select your Crust</option>
+                          </select>
+                      </div>
+                      <div class="form-group mt-2">
+                          <p>Select Toppings @ sh. 50 each</p>
+                          <div class="row toppings">
 
-        <div class="row">
-          <div class="col-sm-5">
-            <form action="">
-              <label for="pizza-name">Select Pizza</label>
-              <select class="browser-default custom-select custom-select-md mb-3 name">
-                <option value="Pepperoni">Pepperoni</option>
-                <option value="Hawaiian">Hawaiian</option>
-                <option value="chicken tikka">Chicken Tikka</option>
-                <option value="margherita">Margherita</option>
-                <option value="quattro stagioni">Quattro Stagioni</option>
-                <option value="diavola">Diavola</option>
-              </select>
-              <label for="size">Select Size</label>
-              <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                <option selected value="0">Select size here</option>
-                <option value="large">Large -- sh. 1500</option>
-                <option value="medium">Medium -- sh. 1000</option>
-                <option value="small">Small -- sh. 700</option>
-              </select>
-              <label for="crust">Select Crust</label>
-              <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                  <option selected value="0">Select your crust</option>
-                  <option value="Crispy">Crispy -- sh. 300</option>
-                  <option value="Stuffed">Stuffed -- sh. 250</option>
-                  <option value="Gluten-free">Gluten-free-- sh. 200</option>
-              </select>
-
-              <label for="Toppings">Select your Toppings @ sh. 50 each</label><br>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="Olives" value="Olives" name="toppings">
-                  <label class="custom-control-label" for="Olives">Olives</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
-                  <label class="custom-control-label" for="Bacon">Bacon</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
-                  <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
-                </div>
-                <br><br>
-              <button type="submit" class="btn btn-orange proceed">Proceed</button>
-            </form>
-          </div>
-
-          <!--order and delivery method-->
-
-          <div class="col-sm-7">
-            <div id="information">
-              <p>Your order will be processed within an hour of placing it. Kindly ensure you pay the total cost on delivery. Incase of any comment or complaint, please contact our customer care desk.</p>
-              <p id="regards"><strong>Regards, <br> Management</strong></p>
-            </div>
-            <div class="choice">
-              <h2>Your Order is: </h2>
-              <div id="your-orders">
-                <table class="table table-sm pizzatable">
-                  <thead>
-                    <tr>
-                      <th scope="col">Name</th>
-                      <th scope="col">Size</th>
-                      <th scope="col">Crust</th>
-                      <th scope="col">Topping</th>
-                      <th scope="col">Total</th>
-                    </tr>
-                  </thead>
-                  <tbody id="ordersmade">
-                    <tr>
-                      <td id="pizzaname"></td>
-                      <td id="pizzasize"></td>
-                      <td id="pizzacrust"></td>
-                      <td id="pizzatopping"></td>
-                      <td id="totals"></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p id="pizzatotal"></p>
-                <p id="totalbill"></p> 
-                <p id="addedprice">Would you like delivery for an additional cost of sh. 500?</p>
-                <p id="finalmessage"></p>
+                          </div>
+                      </div>
+                      <div class="mt-4 text-end">
+                          <button class="btn">Add <i class="fa fa-plus-circle"></i></button>
+                      </div>
+                  </form>
               </div>
-              <button class="btn btn-orange addPizza">Add Pizza</button>
-              <button class="btn btn-orange" id="checkout">Checkout</button>
-              <button class="btn btn-orange deliver">Delivery</button>
-              <button class="btn btn-orange pickup">Pickup</button>
-            </div>
-            <div class="delivery">
-              <form action="">
-                <div class="form-group">
-                  <input type="text" id="location" class="form-control mb-3" placeholder="Where do you live?">
-                  <button class="btn btn-orange" id="complete-order">Complete Order</button>
-                </div>
-              </form>
-            </div>
+
+              <div class="col-md-7 shadow">
+                  <table class="table table-responsive order-table">
+                      <thead>
+                          <tr>
+                              <th>Name</th>
+                              <th>Size</th>
+                              <th>Crust</th>
+                              <th>Topping</th>
+                              <th width="33">Quantity</th>
+                              <th>Total</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td colspan="6" class="empty-cart text-center">
+                                  <img src="img/empty-cart.png" alt="Empty cart image"> <br>
+                                  Your cart is empty!
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <div class="mt-3 text-end">
+                      <p class="grand-total">Total cost: Ksh <span class="text-bold">0</span></p>
+                  </div>
+                  <div class="delivery-button float-end m-3">
+                      <button class="btn" data-bs-toggle="modal" data-bs-target="#deliveryMethodModal">Next Step <i
+                              class="fa fa-arrow-right"></i></button>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
+  </div>
 
-      <!--contact section-->
+  <!-- Select delivery method -->
+ 
+  <div class="modal fade" id="deliveryMethodModal" tabindex="-1" aria-labelledby="deliveryMethodModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="deliveryMethodModalLabel">DELIVERY METHOD</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  
+                  <div id="select-delivery-method">
+                      <p>How do you want your order delivered? <span class="text-center">*</span></p>
+                      <p class="delivery-option text-danger"></p>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="deliveryMethod" id="deliveryMethod1"
+                              value="pickup">
+                          <label class="form-check-label" for="deliveryMethod1">
+                              Pickup
+                          </label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="deliveryMethod" id="deliveryMethod2"
+                              value="delivery">
+                          <label class="form-check-label" for="deliveryMethod2">
+                              Delivery Address
+                          </label>
+                          <p>Please ensure your address is correct to get your delivery in time.
+                              delivery costs <span class="color-palace">KSh 300</span></p>
+                      </div>
+                      <div class="location mt-5">
+                          <form id="delivery-form">
+                              <div id="location-input-details">
+                                  <h5>Delivery Details</h5>
+                                  <p class="text-danger error-delivery-location"></p>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">Name <span
+                                                      class="text-danger">*</span></label>
+                                              <input type="text" class="form-control" name="name" id="customerName">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">Phone Number <span
+                                                      class="text-danger">*</span></label>
+                                              <input type="number" class="form-control" name="phone"
+                                                  id="customerPhone">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">Location <span
+                                                      class="text-danger">*</span></label>
+                                              <input type="text" class="form-control" name="location"
+                                                  id="customerLocation">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">Additional
+                                                  Information
+                                              </label>
+                                              <textarea name="additionalInfo" class="form-control" id="additionalInfo"
+                                                  rows="2"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                                  <button type="submit" class="btn" id="checkout-button">Checkout</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
 
+                  <!-- Display order summary -->
+
+                  <div id="summary-order">
+                      <div class="delivery-head"></div>
+                      <div class="delivery-bottom"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--contact section-->
+
+    <footer>
       <div class="container-fluid bg-default"  id="contact">
         <div class="controls-top">
           <br>
@@ -234,6 +293,7 @@
           </div>
         </div>
       </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
