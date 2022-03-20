@@ -23,7 +23,7 @@ $("button.proceed").click(function(event){
     pTopping.push($(this).val());
   });
   console.log(pTopping.join(", "));
-})
+// })
 
 switch(pSize){
   case "0":
@@ -235,3 +235,5 @@ $("button#complete-order").click(function(event){
   }
 });
 event.preventDefault();
+
+});
