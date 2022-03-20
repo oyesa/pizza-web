@@ -66,3 +66,19 @@ switch(pCrust){
           default:
             console.log("No Price");
 }
+
+let topping_value = pTopping.length*50;
+console.log("topping value" +topping_value);
+
+if((pSize == "0") && (pCrust =="0")){
+  console.log("nothing selected");
+  $("button.proceed").show();
+  $("#information").show();
+  $(div.choice).hide();
+  alert("Please select pizza size and crust");
+}
+else{
+  $("button.proceed").hide();
+  $("#information").hide();
+  $("div.choice").slideDown(1000);
+}
