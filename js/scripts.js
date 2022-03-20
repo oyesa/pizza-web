@@ -149,7 +149,6 @@ $(function () {
       $(".empty-cart").hide();
   }
   $("#order-form").on("submit", function (e) {
-      //prevent default action
       e.preventDefault();
 
       const selectedPizzaName = $("#pizza").val();
@@ -163,7 +162,7 @@ $(function () {
 
       // validation for all fields
       if (!selectedPizzaName || !selectedSize || !selectedCrust) {
-          $("#error").text("** Please select a pizza, size and crust 🙂** ");
+          $("#error").text("** Please select a pizza, size and crust ** ");
           return;
       } else {
           $("#error").text("");
@@ -236,7 +235,6 @@ $(function () {
 
   // delivery modal
   $("#delivery-form").on("submit", function (e) {
-      //prevent default action
       e.preventDefault();
       // check if the user has selected the radio button
       const selectd = $("input[name='deliveryMethod']:checked");
