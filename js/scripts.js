@@ -187,3 +187,18 @@ $("button.deliver").click(function(){
   console.log("You will pay sh. "+deliveryAmount+" upon delivery.");
   $("#totalbill").append("Your bill plus delivery fee is: "+deliveryAmount);
 });
+
+// When pickup button is clicked
+
+$("button.pickup").click(function(){
+  $(".pizzatable").hide();
+  $(".choice h2").hide();
+  $(".delivery").slideDown(1000);
+  $("#addedprice").hide();
+  $("button.pickup").hide();
+  $("#pizzatotal").hide();
+
+  let pickupAmount = checkoutTotal;
+  console.log("You will pay sh. "+pickupAmount+" on pickup.");
+  $("#totalbill").append("Your bill is: "+pickupAmount);
+})
