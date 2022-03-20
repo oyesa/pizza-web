@@ -144,4 +144,21 @@ $("button.addPizza").click(function(){
             default:
               console.log("No crust");
   }
+  let topping_value = pTopping.length*50;
+  console.log("toppings value" + topping_value);
+  total = price + crust_price + topping_value;
+  console.log(total);
+
+  checkoutTotal = checkoutTotal + total;
+  console.log(checkoutTotal);
+
+  // constructor function
+
+  var newOrder = new Getpizza(pName, pSize, pCrust, pTopping, total);
+
+  $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
+  console.log(newOrder);
+
 });
+
+// Function for checkout Button
