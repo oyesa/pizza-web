@@ -201,4 +201,25 @@ $("button.pickup").click(function(){
   let pickupAmount = checkoutTotal;
   console.log("You will pay sh. "+pickupAmount+" on pickup.");
   $("#totalbill").append("Your bill is: "+pickupAmount);
+});
+
+// When complete button is clicked
+
+$("button#complete-order").click(function(event){
+  event.preventDefault();
+
+  $("#pizzatotal").hide();
+  $(".delivery").hide();
+  $(".pickup").hide();
+  $("button#complete-order").hide();
+
+  let deliveryAmount = checkoutTotal+500;
+  console.log("Final bill is: "+deliveryAmount);
+
+  let pickupAmount = checkoutTotal;
+  console.log("Final bill is "+pickupAmount);
+
+  let location = $("input#location").val();
+
+  if ()
 })
