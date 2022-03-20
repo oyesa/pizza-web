@@ -162,3 +162,28 @@ $("button.addPizza").click(function(){
 });
 
 // Function for checkout Button
+
+$("button#checkout").click(function(){
+  $("button#checkout").hide();
+  $("button.addPizza").hide();
+  $("button.deliver").slideDown(1000);
+  $("button.pickup").slideDown(1000);
+  $("#addedprice").slideDown(1000);
+  console.log("Your total bill is sh. "+checkoutTotal);
+  $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
+});
+
+// When delivery button is clicked
+
+$("button.deliver").click(function(){
+  $(".pizzatable").hide();
+  $(".choice h2").hide();
+  $(".delivery").slideDown(1000);
+  $("#addedprice").hide();
+  $("button.deliver").hide();
+  $("#pizzatotal").hide();
+
+  let deliveryAmount = checkoutTotal+500;
+  console.log("You will pay sh. "+deliveryAmount+" upon delivery.");
+  $("#totalbill").append("Your bill plus delivery fee is: "+deliveryAmount);
+});
