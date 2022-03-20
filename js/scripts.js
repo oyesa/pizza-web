@@ -221,5 +221,17 @@ $("button#complete-order").click(function(event){
 
   let location = $("input#location").val();
 
-  if ()
-})
+  if ($("input#location").val()!=""){
+
+    $("#finalmessage").append("We have received your order and it will be delivered to you at "+location+ "Prepare sh. "+deliveryAmount );
+    $("totalbill").hide();
+    $("#finalmessage").slideDown(1200);
+  }
+
+  else {
+    alert("Please fill in delivery location.");
+    $(".delivery").show();
+    $("button#complete-order").show();
+  }
+});
+event.preventDefault();
