@@ -82,3 +82,15 @@ else{
   $("#information").hide();
   $("div.choice").slideDown(1000);
 }
+
+total = price + crust_price +topping_value;
+console.log(total);
+let checkoutTotal = checkoutTotal + total;
+
+$("#pizzaname").html($(".name option: selected").val());
+$("#pizzasize").html($("#size option: selected").val());
+$("#pizzacrust").html($("#crust option: selected").val());
+$("#pizzatopping").html(pTopping.join(", "));
+$("#totals").html(total);
+
+// Add button function
