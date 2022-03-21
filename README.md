@@ -6,7 +6,9 @@
 This is a website called Sullivan's Pizza Relish where customers can order different types and sizes of pizzas with one or more toppings. 
 
 ### Behaviour Driven Development (BDD)
+INPUT: User selects type of pizza they want, size,crust and toppings. User also inputs name,phone number, location and additional information as delivery input.
 
+OUTPUT:Upon clicking add button, user is able to add as many pizzas as they want. On clicking next step button, a pop up prompts the user to enter delivery details; and thereafter user receives a message that their order has been received and is being processed.
 
 ### Setup/installation Requirements
  * Access your Github account
@@ -20,9 +22,6 @@ This is a website called Sullivan's Pizza Relish where customers can order diffe
  - Javascript 
  - Bootstrap 
  - jQuery
-
-### Screenshots
-
 
 ### Bugs
 No known bugs
