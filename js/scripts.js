@@ -230,7 +230,9 @@ $(function () {
       }
 
       //update grand total
+    //   $("#deliveryMethodModal").show();
       calculateGrandTotal();
+
   });
 
   // delivery modal
