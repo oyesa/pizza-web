@@ -1,5 +1,5 @@
 # Sullivan's Pizza Website
-#### By Oyesa Oluchina
+#### By Oyesa Mercy Oluchina
 #### 18/03/2022  
 
 ### Description
