@@ -4,11 +4,8 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
-
-
 body {
-  color: #4b4b4b;
+  color: black;
   overflow-x: hidden;
 }
 
@@ -35,21 +32,24 @@ height: 50%;
 }
 
 #landing-pg {
-  padding-left: 4%;
-  padding-right: 4%;
+  background-image: url(images/pizzaBKCool.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px;
+  width: 100% !important;
+  
 }
-.intro h1 {
+#landing-pg h1 {
   font-size: 4em;
   line-height: 1.1em;
   font-weight: 900;
-}
-.intro .small-image img {
-  height: 500px;
+  color: white;
 }
 
-/* .intro #img-landing {
-  height: ;
-} */
+#landing-pg p{
+  color: white;
+}
 .intro p {
   font-size: 21px;
 }
@@ -71,13 +71,13 @@ height: 50%;
   }
 }
 
-/* about */
+/* about section*/
 
 .about {
   color: white;
   padding: 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/pizzaBKCool.jpg");
+    url("images/pizzaBGsmoke.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,7 +104,7 @@ tbody{
   text-transform: capitalize;
 }
 
-/* Delivery mode */
+/* Delivery section */
 
 #location-input-details {
   display: none;
@@ -134,7 +134,7 @@ a:hover {
 .flex.container {
   display: flex;
   justify-content: space-between;
-}
+} 
 
 /* #order-now h2 {
   text-align: center;
@@ -145,16 +145,16 @@ a:hover {
   padding-top: 4%;
   padding-bottom: 4%;
   color: black;
-} 
+}  */
 
 
-.choice {
+/* .choice {
   display: none;
   padding-left: 2%;
   padding-right: 2%;
-} */
+} 
 
-/* .delivery {
+.delivery {
   padding-left: 10%;
   padding-right: 10%;
   display: none;
@@ -167,7 +167,7 @@ a:hover {
 #your-orders{
   color: black;
   font-size: 30px; 
-} */
+}  */
 
 #contact h2{
   text-align: center;

@@ -5,7 +5,7 @@ function Pizza(name) {
   this.toppings = [];
 }
 
-// Pizza size
+// Create Prototypes
 Pizza.prototype.setSize = function (size) {
   const pizzaSize = pizzaSizes.find((pizzaSize) => pizzaSize.size == size);
   if (pizzaSize) {
@@ -14,7 +14,6 @@ Pizza.prototype.setSize = function (size) {
   }
 };
 
-// Pizza crust
 Pizza.prototype.setCrust = function (name) {
   const pizzaCrust = pizzaCrusts.find((pizzaCrust) => pizzaCrust.name == name);
   if (pizzaCrust) {
@@ -28,7 +27,6 @@ Pizza.prototype.setTopings = function (toppings) {
   this.calculateTotal();
 };
 
-//Quantity
 Pizza.prototype.setQuantity = function (quantity) {
   this.quantity = +quantity;
   this.calculateTotal();
@@ -138,7 +136,7 @@ $(function () {
 
   }
 
-  // initialize an empty cart
+  // initialize empty cart
   const cart = [];
 
   // check if cart is empty
